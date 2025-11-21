@@ -14,3 +14,17 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
+
+.header {
+  max-width:1440px;
+
+}
+
+.header__html {
+  text-transform:uppercase;
+}
+
+.header__myText {
+  text-transform:uppercase;
+  margin-top:20px;
+}
