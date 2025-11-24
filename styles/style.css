@@ -77,7 +77,6 @@
 .karta__image-text {
   text-transform: uppercase;
   position: absolute;
-  font-family: var(--page-second-font-family, fantasy);
   inset-block-start: 25px;
   inset-inline-end: 25px;
   font-size: 14px;
@@ -86,6 +85,7 @@
   font-family: var(--page-second-font-family, fantasy);
   color: var(--text-color, #000000);
   text-shadow: 0 0 1px #ffffff;
+  inset-inline-end: 25px;
   mix-blend-mode: hard-light;
 }
 

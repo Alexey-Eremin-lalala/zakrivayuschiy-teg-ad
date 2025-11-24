@@ -14,7 +14,7 @@
     --contour-color: black; /* цвет контура */
     --main-body-color: none; /* цвет сердечка сначала(но ясен пень его нет) */
     --main-body-color-hover: #000000; /* цвет сердечка при наведении(и дураку понятно) */
-    --hover-color: #000000; 
+    --hover-color: #000000;
     --core-color: none; /* цвет сердечка при нажатии */
     --sparks-color: none;
     --animation-fill-color: #FF0000; /* цвет анимашки(после нажатия) */
