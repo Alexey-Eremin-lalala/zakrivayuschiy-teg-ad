@@ -78,7 +78,6 @@
   text-transform: uppercase;
   position: absolute;
   inset-block-start: 25px;
-  inset-inline-end: 25px;
   font-size: 14px;
   z-index: 1;
   opacity: 0.5;
@@ -136,15 +135,15 @@
 
 .button__default::before {
   content: '';
-  position: absolute;
   inline-size: 100%;
   block-size: 100%;
-  inset: 0;
-  z-index: -1;
-  background: #000000;
-  transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: #000000;
 }
 
 .button__text {
@@ -165,10 +164,10 @@
   background-color: transparent;
   display: flex;
   align-items: center;
+   transition: border-color 0.3s ease;
   justify-content: center;
   padding: 0;
   cursor: pointer;
-  transition: border-color 0.3s ease;
   max-height: 38px;
   max-width: 38px;
 }
@@ -189,16 +188,17 @@
 }
 
 .save-button {
-  margin-inline: auto;
+  background-color: var(--svetlo-page-background-color, #ffffff);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  background-color: var(--svetlo-page-background-color, #ffffff);
   font-size: 14px;
   margin-block-start: 50px;
+  gap: 8px;
   width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
   padding: 15px 0;
+  margin-inline: auto;
 }
 
 .lowercase {
@@ -206,17 +206,17 @@
 }
 
 .floppy-icon {
+   color: var(--svetlo-text-color, #ffffff);
   block-size: 21px;
   inline-size: 21px;
-  color: var(--svetlo-text-color, #ffffff);
   mix-blend-mode: difference;
 }
 
 .modal-window {
-  padding: 30px;
-  max-inline-size: 357px;
   font-family: var(--page-second-font-family, fantasy);
   font-size: 14px;
+  padding: 30px;
+  max-inline-size: 357px;
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -250,7 +250,7 @@
 }
 
 .filter__pale {
-  filter: grayscale(0.65);
+  filter: grayscale(1);
 }
 
 .filter__saturation {
@@ -282,7 +282,6 @@
   .card__image-text {
     text-shadow: none;
     -webkit-text-stroke: 1px #ffffff;
-    text-stroke: 1px #ffffff;
   }
 }
 
