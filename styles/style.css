@@ -278,7 +278,7 @@
 
 @supports ((text-stroke: 1px #ffffff) or (-webkit-text-stroke: 1px #ffffff)) {
   
-  .card__image-text {
+  .karta__image-text {
     text-shadow: none;
     -webkit-text-stroke: 1px #ffffff;
   }
