@@ -80,7 +80,7 @@
   inset-block-start: 25px;
   font-size: 14px;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 50%;
   font-family: var(--page-second-font-family, fantasy);
   color: var(--text-color, #000000);
   text-shadow: 0 0 1px #ffffff;
@@ -280,7 +280,7 @@
   
   .karta__image-text {
     text-shadow: none;
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 0.3px #ffffff;
   }
 }
 
