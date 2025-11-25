@@ -1,1 +1,21 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --page-first-font-family: 'Inter', sans-serif;
+    --page-second-font-family: 'Press Start 2P', fantasy;
+    --bolshoy-font-weight: 700;
+    --text-color: #000000;
+    --svetlo-text-color: #ffffff;
+    --haha-section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.7rem);
+    --border-size: 2px;
+    --svetlo-page-background-color: #ffffff;
+    --ohrenet-page-background-image: repeating-linear-gradient(to right, #d3d3d3 0 2px, #d3d3d300 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, #d3d3d300 2px 4px), linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+    /* милые анимашки */
+    --contour-color: black; /* цвет контура */
+    --main-body-color: none; /* цвет сердечка сначала(но ясен пень его нет) */
+    --main-body-color-hover: #000000; /* цвет сердечка при наведении(и дураку понятно) */
+    --hover-color: #000000;
+    --core-color: none; /* цвет сердечка при нажатии */
+    --sparks-color: none;
+    --animation-fill-color: #FF0000; /* цвет анимашки(после нажатия) */
+}

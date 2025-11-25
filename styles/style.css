@@ -13,4 +13,302 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  padding-block-start: 100px;
+  font-family: var(--page-first-font-family, sans-serif);
+  font-variation-settings: 'wght' 400;
+  color: var(--text-color, #000000);
+  background-color: var(--svetlo-page-background-color, #ffffff);
+  background-image: var(--ohrenet-page-background-image, none);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  font-family: var(--page-second-font-family, fantasy);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: 100px;
+  gap: 20px;
+  padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) clamp(0.875rem, -1.4688rem + 10vw, 7.53125rem);
+}
+
+.header__zagolovok {
+  font-size: clamp(3.0622rem, 2.71rem + 1.502vw, 4.0625rem);
+}
+
+.header__zakriva {
+  font-size: clamp(0.87rem, 0.6767rem + 0.85vw, 1.44rem);
+}
+
+.karta {
+  border: var(--border-size, 2px) solid var(--text-color, #000000);
+  width: var(--haha-section-width);
+  margin-inline: auto;
+  background-color: var(--svetlo-page-background-color, #ffffff);
+}
+
+.main {
+  padding-block-end: 100px;
+}
+
+.karta__container {
+  display: grid;
+  gap: 50px;
+}
+
+.karta__header {
+  border-block-end: var(--border-size, 2px) solid var(--text-color, #000000);
+}
+
+.karta__title {
+  font-size: 18px;
+  padding: 5px 10px;
+  font-variation-settings: 'wght' var(--bolshoy-font-weight);
+}
+
+.karta__image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.karta__image-text {
+  text-transform: uppercase;
+  position: absolute;
+  inset-block-start: 25px;
+  font-size: 14px;
+  z-index: 1;
+  opacity: 50%;
+  font-family: var(--page-second-font-family, fantasy);
+  color: var(--text-color, #000000);
+  text-shadow: 0 0 1px #ffffff;
+  inset-inline-end: 25px;
+  mix-blend-mode: hard-light;
+}
+
+.karta__image {
+  display: block;
+  aspect-ratio: 1 / 1;
+  inline-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.karta__content {
+  gap: 27px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  line-height: 21px;
+  border-block-start: var(--border-size, 2px) solid var(--text-color, #000000);
+}
+
+.card__buttons {
+  display: flex;
+  gap: 6px;
+  justify-content: end;
+  position: relative;
+  padding: 0 25px 25px 25px;
+}
+
+.button__default {
+  border: 2px solid #000000;
+  position: relative;
+  z-index: 1;
+  font-family: var(--page-second-font-family, fantasy);
+  font-size: 14px;
+  background-color: var(--svetlo-page-background-color, #ffffff);
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.button__default:focus {
+  outline: none;
+}
+
+.button__default:focus-visible {
+  box-shadow: 2px 2px 0 0 #000000;
+}
+
+.button__default::before {
+  content: '';
+  inline-size: 100%;
+  block-size: 100%;
+   transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  background: #000000;
+}
+
+.button__text {
+  position: relative;
+  display: block;
+  z-index: 1;
+  color: var(--svetlo-text-color, #ffffff);
+  mix-blend-mode: difference;
+  transition: color 0.5s ease-in-out;
+}
+
+.button__default:hover::before {
+  transform: scaleX(1);
+}
+
+.card__icon-button {
+  border: 2px solid transparent;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+   transition: border-color 0.3s ease;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  max-height: 38px;
+  max-width: 38px;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  outline: none;
+  border-color: var(--text-color, #000000);
+}
+
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+  position: relative;
+}
+
+.save-button {
+  background-color: var(--svetlo-page-background-color, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-block-start: 50px;
+  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  padding: 15px 0;
+  margin-inline: auto;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.floppy-icon {
+   color: var(--svetlo-text-color, #ffffff);
+  block-size: 21px;
+  inline-size: 21px;
+  mix-blend-mode: difference;
+}
+
+.modal-window {
+  font-family: var(--page-second-font-family, fantasy);
+  font-size: 14px;
+  padding: 30px;
+  max-inline-size: 357px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.modal-window::backdrop {
+  background: #000000;
+  opacity: 0.75;
+}
+
+.modal-window__content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.floppy-icon__modal {
+  inline-size: 39px;
+  block-size: 39px;
+  flex-shrink: 0;
+}
+
+.modal__button {
+  inline-size: 100%;
+  height: 38px;
+  padding-top: 6px;
+}
+
+.modal-window[open] {
+  display: grid;
+  gap: 30px;
+}
+
+.filter__pale {
+  filter: grayscale(1);
+}
+
+.filter__saturation {
+  filter: saturate(250%);
+}
+
+.filter__hue-rotate {
+  filter: hue-rotate(-180deg);
+}
+
+.filter__invert {
+  filter: invert(0.9) contrast(1.2);
+}
+
+.filter__sepia {
+  filter: sepia(120%);
+}
+
+.filter__blur {
+  filter: blur(100px);
+}
+
+.filter__contrast {
+  filter: contrast(200%);
+}
+
+@supports ((text-stroke: 1px #ffffff) or (-webkit-text-stroke: 1px #ffffff)) {
+  
+  .karta__image-text {
+    text-shadow: none;
+    -webkit-text-stroke: 0.3px #ffffff;
+  }
+}
+
+@media (width <= 375px) {
+
+  .page {
+    padding-block-end: 0;
+  }
+
+  .card__image-text {
+    inset-block-start: 24px;
+    inset-inline-end: 13px;
+  }
+
+  .floppy-icon {
+    block-size: 28px;
+    inline-size: 28px;
+  }
+
+  .save-button {
+    display: flex;
+    flex-direction: column;
+    max-inline-size: 310px;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .modal-window {
+    max-inline-size: 341px;
+  }
 }
